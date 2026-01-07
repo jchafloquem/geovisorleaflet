@@ -1,0 +1,6 @@
+[build]
+  publish = "dist/geomsi/browser"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
