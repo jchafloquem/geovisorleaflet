@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+app-navbar {
+  position: relative;
+  z-index: 1001; /* Asegura que el navbar esté por encima de los controles de Leaflet */
+  flex-shrink: 0; /* Evita que el navbar se aplaste */
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+  z-index: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
